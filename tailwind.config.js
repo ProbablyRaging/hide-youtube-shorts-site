@@ -1,4 +1,4 @@
-// npx tailwindcss -i ./src/stylesheets/styles.css -o ./dist/output.css --watch
+// npx tailwindcss -i ./src/stylesheets/styles.css -o ./dist/styles.css --watch
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
