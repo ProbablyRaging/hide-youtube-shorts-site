@@ -294,6 +294,11 @@ nav {
     padding-left: 5%;
     padding-right: 5%;
   }
+
+  .section-image {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 @media (max-width: 760px) {
