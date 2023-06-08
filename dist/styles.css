@@ -230,6 +230,7 @@ nav {
 
 .section-image {
   width: 860px;
+  filter: drop-shadow(6px 6px 9px #00000080);
 }
 
 .control-image {
