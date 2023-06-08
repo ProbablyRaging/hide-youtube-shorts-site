@@ -296,6 +296,10 @@ nav {
 }
 
 @media (max-width: 760px) {
+  .nav-right {
+    display: none;
+  }
+
   .hero-wrapper {
     padding-top: 5rem;
   }
@@ -362,7 +366,7 @@ nav {
     justify-content: center;
   }
 
-  .nav-right {
+  .nav-link {
     display: none;
   }
 }
