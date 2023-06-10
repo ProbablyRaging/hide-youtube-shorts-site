@@ -319,7 +319,7 @@ nav {
   }
 
   .section-image {
-    width: 80%;
+    width: 95%;
   }
 
   .control-image {
@@ -374,5 +374,9 @@ nav {
 
   .nav-link {
     display: none;
+  }
+
+  .badge-image {
+    max-width: 40%;
   }
 }
