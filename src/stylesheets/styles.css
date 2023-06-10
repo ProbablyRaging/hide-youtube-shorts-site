@@ -146,7 +146,7 @@ nav {
 }
 
 .text-footer {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 @media (max-width: 1400px) {
@@ -202,6 +202,14 @@ nav {
         padding-left: 5%;
         padding-right: 5%;
     }
+
+    .cta-wrapper {
+        flex-direction: column;
+    }
+
+    .text-slim {
+        margin-bottom: 32px;
+    }
 }
 
 @media (max-width: 760px) {
@@ -210,7 +218,7 @@ nav {
     }
 
     .hero-wrapper {
-        padding-top: 5rem;
+        padding-top: 3.5rem;
     }
 
     .hero-title {
