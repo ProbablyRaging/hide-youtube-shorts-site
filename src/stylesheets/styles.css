@@ -7,7 +7,7 @@
 
 :root {
     --bg-primary: rgb(255, 255, 255);
-    --bg-alt: rgb(230, 237, 255);
+    --bg-alt: rgb(212, 224, 255);
     --alt-text: rgb(42, 42, 42);
     --accent: rgb(26, 94, 255);
     --accentHover: rgb(20 83 231);
@@ -75,6 +75,10 @@ nav {
     padding-right: 15%;
 }
 
+.brand-logo {
+    /* filter: drop-shadow(1px 1px 4px #00000029); */
+}
+
 .nav-link {
     color: rgb(50, 50, 50);
     border-bottom: 2px solid transparent;
@@ -129,6 +133,13 @@ nav {
     width: 28rem;
     min-width: 28rem;
     filter: drop-shadow(8px 13px 7px #00000052);
+}
+
+.lottie-player {
+    position: absolute;
+    top: 52px;
+    right: 140px;
+    width: 892px;
 }
 
 .section-image {
