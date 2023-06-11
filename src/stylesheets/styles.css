@@ -53,6 +53,11 @@ a {
     padding-right: 20%;
 }
 
+.section-secondary {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 .section-tertiary {
     background-color: var(--accent);
     padding-left: 20%;
@@ -73,10 +78,6 @@ nav {
     background-color: var(--bg-alt);
     padding-left: 15%;
     padding-right: 15%;
-}
-
-.brand-logo {
-    /* filter: drop-shadow(1px 1px 4px #00000029); */
 }
 
 .nav-link {
@@ -148,8 +149,8 @@ nav {
 }
 
 .control-image {
-    min-width: 450px;
-    max-width: 450px;
+    min-width: 350px;
+    max-width: 350px;
 }
 
 .text-slim {
@@ -205,6 +206,23 @@ nav {
     font-size: 1rem;
     line-height: 1.75;
     margin-bottom: 0.625rem;
+}
+
+.testimonial-quote {
+    position: relative;
+    top: -10px;
+    transform: rotate(180deg);
+}
+
+.testimonial-user {
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.separator {
+    width: 30%;
+    height: 1px;
+    background-color: #0000001b;
 }
 
 @media (max-width: 1400px) {
@@ -313,7 +331,7 @@ nav {
         padding-right: 5%;
     }
 
-    .section-alternate {
+    .section-secondary {
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -353,5 +371,9 @@ nav {
 
     .badge-image {
         max-width: 40%;
+    }
+
+    .feature-list {
+        flex-direction: column;
     }
 }
