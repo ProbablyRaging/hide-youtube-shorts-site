@@ -223,6 +223,12 @@ nav {
     background-color: #0000001b;
 }
 
+@media (max-width: 1650px) {
+    .lottie-player {
+        right: 0;
+    }
+}
+
 @media (max-width: 1400px) {
     nav {
         padding-left: 10% !important;
