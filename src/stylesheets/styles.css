@@ -315,13 +315,15 @@ nav {
     }
 }
 
+@media (max-width: 1030px) {
+    .nav-right {
+        display: none !important;
+    }
+}
+
 @media (max-width: 920px) {
     .nav-wrapper {
         justify-content: center !important;
-    }
-
-    .nav-right {
-        display: none !important;
     }
 }
 
