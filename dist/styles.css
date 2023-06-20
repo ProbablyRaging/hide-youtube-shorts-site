@@ -566,7 +566,7 @@ nav {
     padding-right: 10% !important;
   }
 
-  h1 {
+  h2 {
     text-align: center !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -646,7 +646,7 @@ nav {
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1070px) {
   .nav-right {
     display: none !important;
   }
@@ -701,8 +701,8 @@ nav {
 }
 
 @media (max-width: 640px) {
-  h1 {
-    font-size: 46px !important;
+  .hero-title {
+    font-size: 36px !important;
   }
 
   .nav-link {
@@ -716,5 +716,13 @@ nav {
   .feature-list {
     flex-direction: column !important;
     gap: 0 !important;
+  }
+
+  .button-primary {
+    font-size: 14px;
+  }
+
+  .button-secondary {
+    font-size: 14px;
   }
 }
