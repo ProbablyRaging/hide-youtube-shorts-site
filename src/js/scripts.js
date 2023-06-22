@@ -8,7 +8,6 @@ $(function () {
         } else {
             currentSlide++;
         }
-        console.log(currentSlide);
 
         if (currentSlide === 1) {
             $('.carousel-title-three').fadeOut(() => {
@@ -41,8 +40,6 @@ $(function () {
         } else {
             currentSlide--;
         }
-
-        console.log(currentSlide);
 
         if (currentSlide === 1) {
             $('.carousel-title-two').fadeOut(() => {
