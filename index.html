@@ -47,6 +47,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <link href="/dist/styles.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="/src/js/scripts.js"></script>
+
 </head>
 
 <body>
@@ -110,12 +114,37 @@
                 </div>
             </section>
 
-            <section id="productivity" class="section-secondary">
+            <section id="productivity" class="section-secondary relative z-10">
                 <div class="flex flex-col justify-center items-center gap-6 pt-20 pb-20">
-                    <h2 class="text-4xl font-semibold text-center">Streamline your productivity</h2>
-                    <p class="sub-text mb-6">Disbale YouTube Shorts and other content to reduce distractions.</p>
 
-                    <img src="/src/assets/hys-site-image.svg" alt="disabled youtube shorts on subscriptions feed" width="860" height="484" class="section-image">
+                    <h2 class="basic-title text-4xl font-semibold text-center">Hide Shorts in your subscriptions feed</h2>
+                    <h3 class="basic-title sub-text">and everywhere else they appear</h3>
+                    <img src="/src/assets/hys-site-image-one.svg" alt="disabled youtube shorts on subscriptions feed" width="860" height="484" class="section-image non-slide">
+                    <h2 class="basic-title text-4xl font-semibold text-center mt-20">Customize your experience</h2>
+                    <h3 class="basic-title sub-text">with over 10 unique options to cater to your needs</h3>
+                    <img src="/src/assets/hys-site-image-two.svg" alt="disabled youtube shorts on subscriptions feed" width="860" height="484" class="section-image non-slide">
+                    <h2 class="basic-title text-4xl font-semibold text-center mt-20">Play Shorts as a regular video</h2>
+                    <h3 class="basic-title sub-text">and community input is welcomed</h3>
+                    <img src="/src/assets/hys-site-image-three.svg" alt="disabled youtube shorts on subscriptions feed" width="860" height="484" class="section-image non-slide">
+
+                    <h2 class="carousel-title-one text-4xl font-semibold text-center">Hide Shorts in your subscriptions feed</h2>
+                    <h3 class="carousel-title-one sub-text">and everywhere else they appear</h3>
+                    <h2 class="carousel-title-two text-4xl font-semibold text-center">Customize your experience</h2>
+                    <h3 class="carousel-title-two sub-text">with over 10 unique options to cater to your needs</h3>
+                    <h2 class="carousel-title-three text-4xl font-semibold text-center">Completely open-source</h2>
+                    <h3 class="carousel-title-three sub-text">and community input is welcomed</h3>
+
+                    <div class="carousel-button prev"></div>
+
+                    <div class="slider-wrapper">
+                        <div class="inner-wrapper">
+                            <img src="/src/assets/hys-site-image-three.svg" alt="disabled youtube shorts on subscriptions feed" width="860" height="484" class="section-image slide">
+                            <img src="/src/assets/hys-site-image-one.svg" alt="disabled youtube shorts on subscriptions feed" width="860" height="484" class="section-image slide">
+                            <img src="/src/assets/hys-site-image-two.svg" alt="disabled youtube shorts on subscriptions feed" width="860" height="484" class="section-image slide">
+                        </div>
+                    </div>
+
+                    <div class="carousel-button next"></div>
                 </div>
             </section>
 

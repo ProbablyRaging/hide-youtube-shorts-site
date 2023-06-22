@@ -106,8 +106,20 @@
   position: absolute !important;
 }
 
+.relative{
+  position: relative !important;
+}
+
+.z-10{
+  z-index: 10 !important;
+}
+
 .float-right{
   float: right !important;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem !important;
 }
 
 .mb-2{
@@ -146,8 +158,12 @@
   margin-top: 2rem !important;
 }
 
-.mr-6{
-  margin-right: 1.5rem !important;
+.mt-14{
+  margin-top: 3.5rem !important;
+}
+
+.mt-20{
+  margin-top: 5rem !important;
 }
 
 .block{
@@ -307,10 +323,6 @@
   padding-top: 7rem !important;
 }
 
-.pr-6{
-  padding-right: 1.5rem !important;
-}
-
 .text-center{
   text-align: center !important;
 }
@@ -357,28 +369,9 @@
   font-style: italic !important;
 }
 
-.text-black{
+.text-\[\#097EEB\]{
   --tw-text-opacity: 1 !important;
-  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
-}
-
-.text-white{
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-}
-
-.text-\[\#4f4f4f\]{
-  --tw-text-opacity: 1 !important;
-  color: rgb(79 79 79 / var(--tw-text-opacity)) !important;
-}
-
-.text-\[\#696969\]{
-  --tw-text-opacity: 1 !important;
-  color: rgb(105 105 105 / var(--tw-text-opacity)) !important;
-}
-
-.text-transparent{
-  color: transparent !important;
+  color: rgb(9 126 235 / var(--tw-text-opacity)) !important;
 }
 
 .text-\[\#1C9AEF\]{
@@ -386,14 +379,28 @@
   color: rgb(28 154 239 / var(--tw-text-opacity)) !important;
 }
 
-.text-\[\#097EEB\]{
-  --tw-text-opacity: 1 !important;
-  color: rgb(9 126 235 / var(--tw-text-opacity)) !important;
-}
-
 .text-\[\#404eed\]{
   --tw-text-opacity: 1 !important;
   color: rgb(64 78 237 / var(--tw-text-opacity)) !important;
+}
+
+.text-\[\#696969\]{
+  --tw-text-opacity: 1 !important;
+  color: rgb(105 105 105 / var(--tw-text-opacity)) !important;
+}
+
+.text-black{
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
+}
+
+.text-transparent{
+  color: transparent !important;
+}
+
+.text-white{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 :root {
@@ -534,7 +541,7 @@ nav {
 
 .section-image {
   width: 860px;
-  filter: drop-shadow(6px 6px 9px #00000080);
+  filter: drop-shadow(6px 6px 9px #00000020);
 }
 
 .control-image {
@@ -614,9 +621,74 @@ nav {
   background-color: #0000001b;
 }
 
+.basic-title {
+  display: none;
+}
+
+.non-slide {
+  display: none;
+}
+
+.carousel-title-two,
+.carousel-title-three {
+  display: none;
+}
+
+.slider-wrapper {
+  width: 1140px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.inner-wrapper {
+  padding: 20px;
+  width: 500%;
+  height: 100%;
+  position: relative;
+  left: -100%;
+}
+
+.slide {
+  width: calc(100%/5);
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.carousel-button {
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid black;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  border-left: 2px solid black;
+  left: 20%;
+  transform: rotate(-45deg);
+}
+
+.next {
+  border-right: 2px solid black;
+  right: 20%;
+  transform: rotate(45deg);
+}
+
 @media (max-width: 1650px) {
   .lottie-player {
     right: 0;
+  }
+
+  .prev {
+    left: 10%;
+  }
+
+  .next {
+    right: 10%
   }
 }
 
@@ -686,12 +758,6 @@ nav {
     padding-right: 5% !important;
   }
 
-  .section-image {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-    max-width: 660px !important;
-  }
-
   .cta-wrapper {
     flex-direction: column !important;
   }
@@ -709,6 +775,40 @@ nav {
 @media (max-width: 1070px) {
   .nav-right {
     display: none !important;
+  }
+
+  .carousel-title-one {
+    display: none !important;
+  }
+
+  .carousel-title-two {
+    display: none !important;
+  }
+
+  .carousel-title-three {
+    display: none !important;
+  }
+
+  .slider-wrapper {
+    display: none !important;
+  }
+
+  .carousel-button {
+    display: none !important;
+  }
+
+  .basic-title {
+    display: block !important;
+  }
+
+  .non-slide {
+    display: block !important;
+  }
+
+  .section-image {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    max-width: 660px !important;
   }
 }
 
@@ -779,10 +879,10 @@ nav {
   }
 
   .button-primary {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   .button-secondary {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
