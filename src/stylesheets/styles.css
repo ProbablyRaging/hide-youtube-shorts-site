@@ -223,6 +223,10 @@ nav {
     background-color: #0000001b;
 }
 
+.sub-text-mobile {
+    display: none;
+}
+
 .basic-title {
     display: none;
 }
@@ -411,6 +415,40 @@ nav {
         padding-left: 5% !important;
         padding-right: 5% !important;
         max-width: 660px !important;
+    }
+
+    .info-section {
+        margin-top: 42px !important;
+        text-align: center !important;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        gap: 0 !important;
+    }
+
+    .info-grid-col {
+        padding: 0 !important;
+    }
+
+    .grid-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 32px;
+    }
+
+    .grid-title-wrapper {
+        flex-direction: column !important;
+    }
+
+    .sub-text-desktop {
+        display: none !important;
+    }
+
+    .sub-text-mobile {
+        display: block !important;
     }
 }
 

@@ -114,12 +114,12 @@
   z-index: 10 !important;
 }
 
-.float-right{
-  float: right !important;
+.col-span-1{
+  grid-column: span 1 / span 1 !important;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem !important;
+.float-right{
+  float: right !important;
 }
 
 .mb-2{
@@ -154,16 +154,12 @@
   margin-top: 3rem !important;
 }
 
-.mt-8{
-  margin-top: 2rem !important;
-}
-
-.mt-14{
-  margin-top: 3.5rem !important;
-}
-
 .mt-20{
   margin-top: 5rem !important;
+}
+
+.mt-8{
+  margin-top: 2rem !important;
 }
 
 .block{
@@ -174,6 +170,10 @@
   display: flex !important;
 }
 
+.grid{
+  display: grid !important;
+}
+
 .h-20{
   height: 5rem !important;
 }
@@ -182,8 +182,16 @@
   height: 2rem !important;
 }
 
+.h-\[20px\]{
+  height: 20px !important;
+}
+
 .w-8{
   width: 2rem !important;
+}
+
+.w-\[20px\]{
+  width: 20px !important;
 }
 
 .w-full{
@@ -202,6 +210,10 @@
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
           user-select: none !important;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
 .flex-row{
@@ -296,6 +308,10 @@
           background-clip: text !important;
 }
 
+.p-4{
+  padding: 1rem !important;
+}
+
 .px-8{
   padding-left: 2rem !important;
   padding-right: 2rem !important;
@@ -309,6 +325,10 @@
 .py-6{
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem !important;
 }
 
 .pb-20{
@@ -340,6 +360,10 @@
 .text-5xl{
   font-size: 3rem !important;
   line-height: 1 !important;
+}
+
+.text-\[16px\]{
+  font-size: 16px !important;
 }
 
 .text-base{
@@ -621,6 +645,10 @@ nav {
   background-color: #0000001b;
 }
 
+.sub-text-mobile {
+  display: none;
+}
+
 .basic-title {
   display: none;
 }
@@ -809,6 +837,40 @@ nav {
     padding-left: 5% !important;
     padding-right: 5% !important;
     max-width: 660px !important;
+  }
+
+  .info-section {
+    margin-top: 42px !important;
+    text-align: center !important;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+  }
+
+  .info-grid-col {
+    padding: 0 !important;
+  }
+
+  .grid-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 32px;
+  }
+
+  .grid-title-wrapper {
+    flex-direction: column !important;
+  }
+
+  .sub-text-desktop {
+    display: none !important;
+  }
+
+  .sub-text-mobile {
+    display: block !important;
   }
 }
 
